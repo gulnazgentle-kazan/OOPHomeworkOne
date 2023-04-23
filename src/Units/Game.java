@@ -6,25 +6,25 @@ import java.util.Random;
 public class Game {
     public static void main(String[] args) {
         /*Peasant peasantOne = new Peasant();
-        System.out.println(peasantOne.getInfo());
+        System.out.println(peasantOne.toString());
 
         Outlaw outlawOne  = new Outlaw();
-        System.out.println(outlawOne.getInfo());
+        System.out.println(outlawOne.toString());
 
         Sniper sniperOne = new Sniper();
-        System.out.println(sniperOne.getInfo());
+        System.out.println(sniperOne.toString());
 
         Magician magicianOne = new Magician();
-        System.out.println(magicianOne.getInfo());
+        System.out.println(magicianOne.toString());
 
         Spearman spearmanOne = new Spearman();
-        System.out.println(spearmanOne.getInfo());
+        System.out.println(spearmanOne.toString());
 
         Arbalesster arbalessterOne = new Arbalesster();
-        System.out.println(arbalessterOne.getInfo());
+        System.out.println(arbalessterOne.toString());
 
         Monk monkOne = new Monk();
-        System.out.println(monkOne.getInfo());*/
+        System.out.println(monkOne.toString());*/
 
         ArrayList<BaseUnit> teamOne = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
@@ -78,9 +78,9 @@ public class Game {
                         break;
                 }
             }
-                teamOne.forEach(n -> System.out.println(n.getInfo()));
+                teamOne.forEach(n -> System.out.println((n.toString() + " " + n.getInfo())));
                 System.out.println();
-                teamTwo.forEach(m -> System.out.println(m.getInfo()));
+                teamTwo.forEach(m -> System.out.println((m.toString() + " " + m.getInfo())));
 
 
     }
