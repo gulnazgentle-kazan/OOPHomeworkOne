@@ -27,9 +27,9 @@ public class Game {
         System.out.println(monkOne.getInfo());*/
 
         ArrayList<BaseUnit> teamOne = new ArrayList<>();
-        for (int i = 0; i < 10; i++){
-            switch (new Random().nextInt(7)){
-                case  0:
+        for (int i = 0; i < 10; i++) {
+            switch (new Random().nextInt(7)) {
+                case 0:
                     teamOne.add(new Arbalesster());
                     break;
                 case 1:
@@ -51,11 +51,11 @@ public class Game {
                     teamOne.add(new Peasant());
                     break;
             }
-
+        }
             ArrayList<BaseUnit> teamTwo = new ArrayList<>();
-            for (int j = 0; j < 10; j++){
-                switch (new Random().nextInt(7)){
-                    case  0:
+            for (int j = 0; j < 10; j++) {
+                switch (new Random().nextInt(7)) {
+                    case 0:
                         teamTwo.add(new Arbalesster());
                         break;
                     case 1:
@@ -77,12 +77,12 @@ public class Game {
                         teamTwo.add(new Peasant());
                         break;
                 }
+            }
                 teamOne.forEach(n -> System.out.println(n.getInfo()));
                 System.out.println();
                 teamTwo.forEach(m -> System.out.println(m.getInfo()));
-        }
 
 
     }
 
-}}
+}
