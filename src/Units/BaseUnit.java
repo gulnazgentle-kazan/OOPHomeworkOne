@@ -6,7 +6,7 @@ package Units;
    чтобы в основной программе небыло видно их полей. В не абстрактных классах переопределить метод toString()
    так чтобы он возвращал название класса или имя. Создать в основной программе по одному обьекту каждого не
    абстрактного класса и вывести в консоль его имя.*/
-public class BaseUnit {
+public abstract class BaseUnit implements GameInterface {
    protected String name; //имя
    protected String typeDamage; // тип атаки
    protected int hp; // здоровье
@@ -47,6 +47,7 @@ public class BaseUnit {
    public static void Dead(){ // умирает
 
    }
+
 }
 
 
